@@ -1,0 +1,27 @@
+[
+  {
+    "name": "mapr_cldb_volumes",
+    "description": "mapr_cldb_volumes",
+    "type": "counter",
+
+    "query": {
+      "start": "10s-ago",
+
+      "mappings": [
+        {
+          "subQuery": {
+            "metric": "mapr.cldb.volumes",
+            "aggregator": "sum",
+            "rate": false,
+            "tags": {
+              "fqdn": "ip-172-31-38-27.eu-west-3.compute.internal"
+            }
+          },
+          "prometheusTags": {
+            "fqdn": "\"ip-172-31-38-27.eu-west-3.compute.internal\""
+          }
+        }
+      ]
+    }
+  }
+]

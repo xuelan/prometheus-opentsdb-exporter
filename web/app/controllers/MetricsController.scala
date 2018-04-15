@@ -105,6 +105,7 @@ class MetricsController @Inject()(
                 .filterNot(_.isEmpty) // get rid of all the empty lines
                 .mkString("\n")
 
+              //val test = "# HELP mapr_cldb_volumes mapr_cldb_volumes\n# TYPE mapr_cldb_volumes counter\nmapr_cldb_volumes{severity=\"critical\"} 25\n# HELP mapr_cldb_cluster_cpubusy_percent mapr_cldb_cluster_cpubusy_percent\n# TYPE mapr_cldb_cluster_cpubusy_percent gauge\nmapr_cldb_cluster_cpubusy_percent{severity=\"critical\"} 7"
               Ok(output)
             }
 

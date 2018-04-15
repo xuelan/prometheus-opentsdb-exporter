@@ -1,0 +1,9 @@
+compile
+
+project web
+
+eval System.setProperty("OPEN_TSDB_URL", "http://172.31.41.240:4242")
+
+eval System.setProperty("METRICS_DIR", "/Users/xuelansun/Git/prometheus-opentsdb-exporter/web/xsu/Exporter/data")
+
+run
